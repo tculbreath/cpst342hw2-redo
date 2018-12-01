@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="StyleSheet.css">
-<link rel="style" type="text/css" href="style.css">
+
 <style>
     h1 {
         color: red;
@@ -14,16 +12,7 @@
     }
     h1 {
         font-weight: 100;
-    }
-    h2 {
-        color: green;
-    }
-    h2 {
-        font-size: 20px;
 
-    }
-    h2 {
-        font-weight: 100;
     }
     p {
         color: purple;
@@ -43,18 +32,163 @@
     footer {
         background-color: cornflowerblue;
     }
+    .Button {
+        -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+        box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+        background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+        background-color:#79bbff;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #84bbf3;
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:1px 1px 0px #528ecc;
+    }.Button:hover {
+         background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+         background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+         background-color:#378de5;
+     }.Button:active {
+          position:relative;
+          top:1px;
+      }
+    .ButtonOptTwo {
+        -moz-box-shadow:inset 0px 1px 0px 0px #fbafe3;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #fbafe3;
+        box-shadow:inset 0px 1px 0px 0px #fbafe3;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d) );
+        background:-moz-linear-gradient( center top, #ff5bb0 5%, #ef027d 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d');
+        background-color:#ff5bb0;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #ee1eb5;
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:1px 1px 0px #c70067;
+    }.ButtonOptTwo:hover {
+         background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0) );
+         background:-moz-linear-gradient( center top, #ef027d 5%, #ff5bb0 100% );
+         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0');
+         background-color:#ef027d;
+     }.ButtonOptTwo:active {
+          position: relative;
+          top: 1px;
+      }
+    .ButtonOptThree {
+        -moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+        box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+        background:-moz-linear-gradient( center top, #b8e356 5%, #a5cc52 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52');
+        background-color:#b8e356;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #83c41a;
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:1px 1px 0px #86ae47;
+    }.ButtonOptThree:hover {
+         background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
+         background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
+         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
+         background-color:#a5cc52;
+     }.ButtonOptThree:active {
+          position:relative;
+          top:1px;
+      }
+    #heading-2 {
+        color: goldenrod;
+
+
 </style>
-<head>
+<head id = "NewIndexheader">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<header> THE HEADER <a href="AuthorsPage.html">Link to Author's Page</a> </header>
+<header> How Far Along Are You?<a href="AuthorsPage.html">Link to Author's Page</a> </header>
+
+<form>
+    <label for="DueDateCalc">First Day of Last Menses:</label>
+
+    <input type="date" id="DueDateCalc" name="trip-start"
+           value="2018-07-22"
+           min="2018-01-01" max="2018-12-31" required>
+
+    <label for="NumberofPregnancies">How many pregancies have you had before this one?(0-40)):</label>
+
+    <input class="form-control form-control-sm" type="text" placeholder="Enter Number of Pregnancy" type="number" id="NumberofPregnancies" name="Weeks"
+           min="0" max="40" required/>
+    <p>Do you have a gender preference?:</p>
+
+    <div>
+        <input type="checkbox" id="Boy" name="Boy">
+        <label for="BOY">BOY</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Girl" name="Girl">
+        <label for="Girl">GIRL</label>
+    </div>
+
+    <div>
+        <input type= "checkbox" id="Neutral" name="Neutral">
+        <label for="Neutral">NEAUTRAL</label>
+    </div>
+
+
+    <label for="email">Enter your email address so we can send you the results</label>
+
+    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" type="email" id="email"
+           pattern=".+@luc.edu" size="30" required>
+
+    <label for="MomDadToBe">Choose a profile picture:</label>
+
+    <input type="file"
+           id="MomDadToBe" name="MomDadToBe"
+           accept="image/png, image/jpeg">
+
+
+    <input type="submit" value="Let's tally up answers">
+
+</form>
+
 <body>
-<h1>Hello <strong>CPST 342</strong> World!</h1>
-<h2>This is for my subheading</h2>
-<p>Venenatis dolor parturient vel adipiscing leo a non a mi parturient eget commodo suspendisse ullamcorper a. At proin congue dis gravida penatibus porttitor orci consectetur non a eget placerat fermentum suspendisse suspendisse magna scelerisque a ligula aenean a condimentum. A dignissim fusce suscipit non ut vel sit praesent pretium aliquet sed laoreet adipiscing dui nam ad placerat a sagittis nam parturient aliquet ut accumsan dapibus. A a imperdiet adipiscing aliquet vulputate a suspendisse non a convallis euismod quisque id euismod dolor vehicula dolor odio adipiscing vestibulum fames sed justo aenean nec nec.</p>
-<p> Mi a senectus ad dis enim magna sociis dictum mus congue placerat laoreet suspendisse himenaeos donec a. Et lorem nec vestibulum eu odio volutpat a vestibulum a cum lectus dignissim a mi integer habitant suspendisse a adipiscing quam nisi placerat. A vestibulum dolor et a himenaeos scelerisque eget pharetra a in sociis sed condimentum scelerisque sagittis parturient at consequat posuere faucibus vel a convallis curabitur tempor est ligula. Scelerisque tempor nibh quam cubilia adipiscing etiam cras morbi dolor nisi cras parturient ac lacinia at montes parturient a ac massa. Quam tincidunt adipiscing parturient massa vestibulum etiam quam a et eros eleifend vestibulum vestibulum faucibus metus per ullamcorper ad sodales penatibus ullamcorper viverra laoreet vestibulum. Non a ullamcorper adipiscing sodales elementum quam a fames ad metus a ut eget class bibendum eu ultricies at ornare suspendisse.</p>
-<nav> <u1> <a href="AuthorsPage.html">Link to Author's Page</a></u1></nav>
-<footer> THE FOOTER <a href="AuthorsPage.html">Link to Author's Page</a> </footer>
+<div class="body-row align-items-left">
+    <p id = "paragraph-1">
+        Do you know what you're having?
+    </p>
+    <a id="Button" href="#" class="Button" onClick="document.getElementById('heading-2').innerHTML = 'Congrats! You are having a Boy';">Boy<a/>
+        <a id = "ButtonOptTwo" href="#" class="ButtonOptTwo" onClick="document.getElementById('heading-2').innerHTML = 'Congrats! You are having a Girl';" >Girl</a>
+        <a id = "ButtonOptThree" href="#" class="ButtonOptThree" onClick="document.getElementById('heading-2').innerHTML = 'Congrats! You have a big surprise coming your way!';">Neutral</a>
+
+        <h1>Hello <strong>CPST 342</strong> World!</h1>
+        <h2 id = "heading-2"></h2>
+        <p id = "paragraph-2">Venenatis dolor parturient vel adipiscing leo a non a mi parturient eget commodo suspendisse ullamcorper a. At proin congue dis gravida penatibus porttitor orci consectetur non a eget placerat fermentum suspendisse suspendisse magna scelerisque a ligula aenean a condimentum. A dignissim fusce suscipit non ut vel sit praesent pretium aliquet sed laoreet adipiscing dui nam ad placerat a sagittis nam parturient aliquet ut accumsan dapibus. A a imperdiet adipiscing aliquet vulputate a suspendisse non a convallis euismod quisque id euismod dolor vehicula dolor odio adipiscing vestibulum fames sed justo aenean nec nec.</p>
+        <p id = "paragraph-3"> Mi a senectus ad dis enim magna sociis dictum mus congue placerat laoreet suspendisse himenaeos donec a. Et lorem nec vestibulum eu odio volutpat a vestibulum a cum lectus dignissim a mi integer habitant suspendisse a adipiscing quam nisi placerat. A vestibulum dolor et a himenaeos scelerisque eget pharetra a in sociis sed condimentum scelerisque sagittis parturient at consequat posuere faucibus vel a convallis curabitur tempor est ligula. Scelerisque tempor nibh quam cubilia adipiscing etiam cras morbi dolor nisi cras parturient ac lacinia at montes parturient a ac massa. Quam tincidunt adipiscing parturient massa vestibulum etiam quam a et eros eleifend vestibulum vestibulum faucibus metus per ullamcorper ad sodales penatibus ullamcorper viverra laoreet vestibulum. Non a ullamcorper adipiscing sodales elementum quam a fames ad metus a ut eget class bibendum eu ultricies at ornare suspendisse.</p>
+        <nav> <u1> <a href="AuthorsPage.html">Link to Author's Page</a></u1></nav>
+        <footer> THE FOOTER <a href="AuthorsPage.html">Link to Author's Page</a> </footer>
 </body>
 </html>
