@@ -1,5 +1,6 @@
 # My Second Git Project
 Tanea Shante Culbreath
+
 Tasks
 
 #1.  I altered the NewIndex.html page's paragraphs and gave them ID references.
@@ -15,3 +16,5 @@ Tasks
         - Could be used for final project
     5. File for profile picture
  #4. There were edits made to the numbers input and to the email input.  I need to figure out the borders better to do a more complex grid.  I will try to have that done by Monday. 
+ #6 & 7.  I could not get past that error message
+ #8 I could not figure out how to finish this problem.  I started the solution on line 157
